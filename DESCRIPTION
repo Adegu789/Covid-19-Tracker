@@ -18,8 +18,8 @@ Imports:
 	leaflet,
 	viridisLite
 LazyData: true
-URL: https://github.com/zahrasalarian/covid19Tracker
-BugReports: https://github.com/zahrasalarian/covid19Tracker/issues
+URL: https://github.com/adegu789/covid19Tracker
+BugReports: https://github.com/adegu789/covid19Tracker/issues
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Suggests: 

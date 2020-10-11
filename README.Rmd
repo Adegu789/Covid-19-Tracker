@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 # covid19Tracker
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.com/zahrasalarian/covid19Tracker.svg?branch=master)](https://travis-ci.com/zahrasalarian/covid19Tracker)
+[![Travis build status](https://travis-ci.com/adegu789/covid19Tracker.svg?branch=master)](https://travis-ci.com/adegu789/covid19Tracker)
 <!-- badges: end -->
 
 The goal of covid19Tracker is to make you aware of what Covid-19 is doing to the world
@@ -32,10 +32,10 @@ And the development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("zahrasalarian/covid19Tracker")
+devtools::install_github("adegu789/covid19Tracker")
 ```
 ## Website
-### You may want to first check the website and see how to get started: https://zahrasalarian.github.io/covid19Tracker/
+### You may want to first check the website and see how to get started: https://adegu789.github.io/covid19Tracker/
 
 ## Example
 
