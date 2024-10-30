@@ -27,7 +27,7 @@ drawCovidMap <-
     if (as.integer(date_temp[1]) <= 3 & as.integer(date_temp[2]) <= 22)
       return("date is not valid")
     #get covid data
-    covid<- betterCallSal::updateCovid(date)
+    covid<- covid19Tracker::updateCovid(date)
 
     # set domain
     domain <- range(covid[[type]])

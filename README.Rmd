@@ -13,59 +13,59 @@ knitr::opts_chunk$set(
 )
 ```
 
-# betterCallSal
+# covid19Tracker
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.com/zahrasalarian/betterCallSal.svg?branch=master)](https://travis-ci.com/zahrasalarian/betterCallSal)
+[![Travis build status](https://travis-ci.com/zahrasalarian/covid19Tracker.svg?branch=master)](https://travis-ci.com/zahrasalarian/covid19Tracker)
 <!-- badges: end -->
 
-The goal of betterCallSal is to make you aware of what Covid-19 is doing to the world
+The goal of covid19Tracker is to make you aware of what Covid-19 is doing to the world
 
 ## Installation
 #### You need to have R version 4.0.2
-You can install the released version of betterCallSal from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of covid19Tracker from [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
-install.packages("betterCallSal")
+install.packages("covid19Tracker")
 ```
 And the development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("zahrasalarian/betterCallSal")
+devtools::install_github("zahrasalarian/covid19Tracker")
 ```
 ## Website
-### You may want to first check the website and see how to get started: https://zahrasalarian.github.io/betterCallSal/
+### You may want to first check the website and see how to get started: https://zahrasalarian.github.io/covid19Tracker/
 
 ## Example
 
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-library(betterCallSal)
+library(covid19Tracker)
 # Wrong format
 period = c("5-6-2020","7-8-2020")
 country = "US"
-plot <- betterCallSal::drawCovidPlot(period,country)
+plot <- covid19Tracker::drawCovidPlot(period,country)
 
 ####
 # You Got error because your date format is not Correct
 # Correct format
 period = c("05-06-2020","07-08-2020")
 country = "US"
-plot <- betterCallSal::drawCovidPlot(period,country)
+plot <- covid19Tracker::drawCovidPlot(period,country)
 ```
 
 ## Lets see an example of world map
 
 ```{r worldMap, warning=FALSE, error=FALSE}
-map <- betterCallSal::drawCovidMap("09-09-2020","Deaths")
+map <- covid19Tracker::drawCovidMap("09-09-2020","Deaths")
 map
 ```
 
 ## You can also embed plots, for example:
 
 ```{r plot, echo = FALSE}
-p <- betterCallSal::drawCovidPlot(c("04-05-2020","06-05-2020"),"US")
+p <- covid19Tracker::drawCovidPlot(c("04-05-2020","06-05-2020"),"US")
 p
 ```

@@ -1,4 +1,4 @@
-Package: betterCallSal
+Package: covid19Tracker
 Type: Package
 Title: Covid-19 World Statistics
 Version: 0.1.0
@@ -18,8 +18,8 @@ Imports:
 	leaflet,
 	viridisLite
 LazyData: true
-URL: https://github.com/zahrasalarian/betterCallSal
-BugReports: https://github.com/zahrasalarian/betterCallSal/issues
+URL: https://github.com/zahrasalarian/covid19Tracker
+BugReports: https://github.com/zahrasalarian/covid19Tracker/issues
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Suggests: 

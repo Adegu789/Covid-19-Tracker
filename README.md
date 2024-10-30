@@ -1,56 +1,35 @@
-
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# betterCallSal
-
-<!-- badges: start -->
-
-[![Travis build
-status](https://travis-ci.com/zahrasalarian/betterCallSal.svg?branch=master)](https://travis-ci.com/zahrasalarian/betterCallSal)
-<!-- badges: end -->
-
-The goal of betterCallSal is to make you aware of what Covid-19 is doing
-to the world
+# covid19Tracker
 
 ## Installation
 
 #### You need to have R version 4.0.2
 
-You can install the released version of betterCallSal from
-[CRAN](https://CRAN.R-project.org) with:
+Install the development version from [GitHub](https://github.com/) with:
 
-``` r
-install.packages("betterCallSal")
-```
-
-And the development version from [GitHub](https://github.com/) with:
-
-``` r
+```r
 # install.packages("devtools")
-devtools::install_github("zahrasalarian/betterCallSal")
+devtools::install_github("adegu789/covid19Tracker")
 ```
-
-## Website
-
-### You may want to first check the website and see how to get started: <https://zahrasalarian.github.io/betterCallSal/>
 
 ## Example
 
 This is a basic example which shows you how to solve a common problem:
 
-``` r
-library(betterCallSal)
+```r
+library(covid19Tracker)
 # Wrong format
 period = c("5-6-2020","7-8-2020")
 country = "US"
-plot <- betterCallSal::drawCovidPlot(period,country)
-#> 
+plot <- covid19Tracker::drawCovidPlot(period,country)
+#>
 #> Attaching package: 'dplyr'
 #> The following objects are masked from 'package:stats':
-#> 
+#>
 #>     filter, lag
 #> The following objects are masked from 'package:base':
-#> 
+#>
 #>     intersect, setdiff, setequal, union
 #> Warning: package 'GetoptLong' was built under R version 4.0.3
 #> -- Attaching packages -------------------- tidyverse 1.3.0 --
@@ -64,13 +43,13 @@ plot <- betterCallSal::drawCovidPlot(period,country)
 #> x dplyr::filter() masks stats::filter()
 #> x dplyr::lag()    masks stats::lag()
 #> Warning: package 'reshape' was built under R version 4.0.3
-#> 
+#>
 #> Attaching package: 'reshape'
 #> The following objects are masked from 'package:tidyr':
-#> 
+#>
 #>     expand, smiths
 #> The following object is masked from 'package:dplyr':
-#> 
+#>
 #>     rename
 #> Warning: `summarise_each_()` is deprecated as of dplyr 0.7.0.
 #> Please use `across()` instead.
@@ -82,17 +61,17 @@ plot <- betterCallSal::drawCovidPlot(period,country)
 # Correct format
 period = c("05-06-2020","07-08-2020")
 country = "US"
-plot <- betterCallSal::drawCovidPlot(period,country)
+plot <- covid19Tracker::drawCovidPlot(period,country)
 ```
 
 ## Lets see an example of world map
 
-``` r
-map <- betterCallSal::drawCovidMap("09-09-2020","Deaths")
-#> 
+```r
+map <- covid19Tracker::drawCovidMap("09-09-2020","Deaths")
+#>
 #> Attaching package: 'RCurl'
 #> The following object is masked from 'package:tidyr':
-#> 
+#>
 #>     complete
 map
 ```

@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(betterCallSal)
+library(covid19Tracker)
 ```
 ## Want to get Covid-19's data from anyday you want easily?
 ## Use "updateCovid" function

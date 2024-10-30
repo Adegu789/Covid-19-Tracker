@@ -1,4 +1,4 @@
 library(testthat)
-library(betterCallSal)
+library(covid19Tracker)
 
-test_check("betterCallSal")
+test_check("covid19Tracker")
